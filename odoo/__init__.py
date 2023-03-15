@@ -102,7 +102,8 @@ except ImportError:
 # Shortcuts
 #----------------------------------------------------------
 # The hard-coded super-user id (a.k.a. administrator, or root user).
-SUPERUSER_ID = 1
+ODOOBOT_ID = 1
+SUPERUSER_ID = 2
 
 
 def registry(database_name=None):
