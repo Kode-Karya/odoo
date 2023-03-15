@@ -239,6 +239,8 @@ var CalendarController = AbstractController.extend({
         if (this.mapping.all_day) {
             context['default_' + this.mapping.all_day] = data[this.mapping.all_day] || null;
         }
+        
+        context['target_date'] = self.model.get().target_date;
 
         for (var k in context) {
             if (context[k] && context[k]._isAMomentObject) {
